@@ -6,7 +6,4 @@ services:
     ports:
       - "8888:8888"
     volumes:
-      - jupyter-notebooks:/opt/notebooks
-volumes:
-  jupyter-notebooks:
-    driver: local
+      - ./working:/opt/notebooks
