@@ -1,0 +1,12 @@
+version: "3"
+services:
+  jupyter:
+    image: anaconda3-jupyter
+    build: .
+    ports:
+      - "8888:8888"
+    volumes:
+      - jupyter-notebooks:/opt/notebooks
+volumes:
+  jupyter-notebooks:
+    driver: local
