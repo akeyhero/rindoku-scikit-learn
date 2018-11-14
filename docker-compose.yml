@@ -1,7 +1,7 @@
 version: "3"
 services:
   jupyter:
-    image: anaconda3-jupyter
+    image: rindoku-scikit-learn
     build: .
     ports:
       - "8888:8888"
